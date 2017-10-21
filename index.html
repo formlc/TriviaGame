@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/	bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<header>Trivia Game</header>
+<div class="row">
+	<div class="col-lg-6">
+		<div id="question" class="col-lg-9"></div>
+		<aside class="col-lg-3" id="score"></aside>
+	</div>
+	<aside class="col-lg-3" id=""></aside>
+</div>
+<div class="row">
+	<div class="col-lg-6" id="questions"></div>
+	<div class="col-lg-6" id="answers"></div>
+</div>
+
+<script type="text/javascript">
+
+	var myQuestions = [
+	{
+		question1: { 
+			question:"Who am I?",
+			X:"Cole",
+			answers: {
+				a:"Cole",
+				b:"Ryan",
+				c:"Jake",
+				d:"Bret",
+			}
+		},
+
+		question2: {
+			question:"What color is the sky?",
+			X:"Blue",
+			answers: {
+				a:"Red",
+				b:"Black",
+				c:"Blue",
+				d:"Green"
+			}
+		},
+
+		question3: {
+			question:"Where are we?",
+			X:"Norris Center",
+			answers: {
+				a:"Home",
+				b:"Car",
+				c:"Office",
+				d:"Norris Center"
+			}
+		},
+
+		question4: {
+			question:"What year is it?",
+			X:"2017",
+			answers: {
+				a:"2017",
+				b:"2014",
+				c:"2013",
+				d:"2000"
+			}
+		},
+
+
+	}];
+
+	var noper = [];
+	function buildGame(){
+		for (var i = 0; i < myQuestions.length; i++) {
+    	noper.push(myQuestions[i].question);
+		}
+	}
+	
+
+	function userAns(){
+
+	}
+
+	buildGame();
+
+	console.log(noper)
+</script>
+</body>
+</html>
